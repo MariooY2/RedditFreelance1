@@ -21,7 +21,7 @@ const features = [
 
 function Feature({ icon, title, description }) {
     return (
-      <div className="flex flex-col items-start p-7 shadow-md pb-10">
+      <div className="flex flex-col items-start p-7 shadow-md pb-10 bg-white w-96">
         <div className='w-full mb-2 flex justify-start items-center'>
           <img src={icon} alt={title} className="h-20 w-20" />
         </div>
@@ -34,17 +34,16 @@ function Feature({ icon, title, description }) {
       </div>
     );
   }
-  
 
 function FeaturesList() {
   return (
     <>
-    <h1 className='mt-52 flex justify-center items-center text-4xl mb-20'> Our Features</h1>
-    <div className="flex justify-around gap-3 bg-white">
-      {features.map((feature, index) => (
-        <Feature key={index} {...feature} />
-      ))}
-    </div>
+      <h1 className='mt-52 flex justify-center items-center text-4xl mb-20'> Our Features</h1>
+      <div className="flex flex-wrap justify-around gap-3 w-full">
+        {features.map((feature, index) => (
+          <Feature key={index} {...feature} />
+        ))}
+      </div>
     </>
   );
 }
