@@ -6,7 +6,7 @@ function Welcome() {
       <Image src="/welcome.png" alt="Sample Image" fill />
 
       <div className="absolute z-10 flex items-center justify-center w-full h-full mt-32">
-        <div className="bg-white w-1/2 h-2/3">
+        <div className="bg-white lg:w-1/2 w-3/4  h-2/3">
           <div className="flex mx-5 my-5 ml-5 gap-5">
             <div className="w-[1520px] h-[250px]">
               <img

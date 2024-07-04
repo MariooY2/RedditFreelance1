@@ -21,7 +21,7 @@ const features = [
 
 function Feature({ icon, title, description }) {
     return (
-      <div className="flex flex-col items-start p-7 shadow-md pb-10 bg-white w-96">
+      <div className="flex flex-col items-start p-7 shadow-md pb-10 bg-white w-[28rem]">
         <div className='w-full mb-2 flex justify-start items-center'>
           <img src={icon} alt={title} className="h-20 w-20" />
         </div>
@@ -38,7 +38,7 @@ function Feature({ icon, title, description }) {
 function FeaturesList() {
   return (
     <>
-      <h1 className='mt-52 flex justify-center items-center text-4xl mb-20'> Our Features</h1>
+      <h1 className='mt-20 flex justify-center items-center text-4xl mb-12'> Our Features</h1>
       <div className="flex flex-wrap justify-around gap-3 w-full">
         {features.map((feature, index) => (
           <Feature key={index} {...feature} />
